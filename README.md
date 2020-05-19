@@ -1,2 +1,3 @@
 # techdegree-project-1
- My first techdegree project
+
+My first techdegree project (quote generator)
