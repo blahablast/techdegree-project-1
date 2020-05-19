@@ -37,8 +37,8 @@ let quotes = [
   {
     quote:
       "Stay in school and use your brain. Be a doctor, be a lawyer, carry a leather briefcase. Forget about sports as a profession. Sports make ya grunt and smell. See, be a thinker, not a stinker.",
-    source: "Apollo Creed",
-    citation: "— Rocky",
+    source: "— Apollo Creed",
+    citation: "Rocky",
     year: 1976,
   },
 ];
