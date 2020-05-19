@@ -46,6 +46,11 @@ let quotes = [
 /***
  * `getRandomQuote` function
  ***/
+getRandomQuote = () => {
+  let randNum = Math.floor(Math.random() * quotes.length) + 1;
+  return randNum;
+};
+console.log(getRandomQuote());
 
 /***
  * `printQuote` function
