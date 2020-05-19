@@ -47,14 +47,19 @@ let quotes = [
  * `getRandomQuote` function
  ***/
 getRandomQuote = () => {
-  let randNum = Math.floor(Math.random() * quotes.length) + 1;
-  return randNum;
+  let randQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  return randQuote;
 };
 console.log(getRandomQuote());
 
 /***
  * `printQuote` function
  ***/
+
+printQuote = () => {
+  let randomQuote = getRandomQuote();
+  let quoteString;
+};
 
 /***
  * click event listener for the print quote button
