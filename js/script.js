@@ -46,22 +46,10 @@ let quotes = [
 /***
  * `getRandomQuote` function
  ***/
-getRandomQuote = () => {
-  let number = quotes[Math.floor(Math.random() * quotes.length)];
-  return number;
-};
 
 /***
  * `printQuote` function
  ***/
-
-printQuote = () => {
-  let randomQuote = getRandomQuote();
-  let quoteString = "";
-  quoteString += `<p class="quote">randomQuote.quote</p>`;
-  quoteString += `<p class="source">randomQuote.source</p>`;
-  return quoteString;
-};
 
 /***
  * click event listener for the print quote button
