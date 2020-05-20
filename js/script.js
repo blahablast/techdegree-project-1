@@ -57,9 +57,19 @@ getRandomQuote = () => {
 
 printQuote = () => {
   let randomQ = getRandomQuote();
-  return randomQ;
+  let displayedQ = "";
+  displayedQ += '<p class="quote">' + randomQ.quote + "</p>";
+  displayedQ += '<p class="source">' + randomQ.source;
+  if (displayedQ.citation !== "") {
+    displayedQ += '<span class="citation">' + randomQ.citation + "</span>";
+  }
+  if (displayedQ.year !== "") {
+    displayedQ += '<span class="year">' + randomQ.year + "</span>";
+  }
+  displayedQ += "</p>";
+
+  document.getElementById("quote-box").innerHTML = displayedQ;
 };
-console.log(printQuote());
 
 /***
  * click event listener for the print quote button
