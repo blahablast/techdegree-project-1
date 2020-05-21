@@ -82,7 +82,7 @@ printQuote = () => {
   }
   displayedQ += "</p>";
 
-  //Taargeting the id in the index.html, calling innerHTML to change the value
+  //Targeting the id in the index.html, calling innerHTML to change the value
   document.getElementById("quote-box").innerHTML = displayedQ;
 };
 
