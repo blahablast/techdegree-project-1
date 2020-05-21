@@ -4,9 +4,6 @@ let quotes = [
     quote:
       "Don't make fame your goal. Make your goal doing what you do to the best of your ability, and that's something no one can take away from you.",
     source: "— Daniel Avidan",
-    citation: "",
-    year: "",
-    tags: "Humor",
   },
   {
     quote:
@@ -27,9 +24,6 @@ let quotes = [
   {
     quote: "The only true wisdom is in knowing you know nothing.",
     source: "— Socrates",
-    citation: "",
-    year: "",
-    tags: "",
   },
   {
     quote:
@@ -69,15 +63,15 @@ printQuote = () => {
 
   //Lots of concatenation to properly display our quotes and attaching our random quotes logic into it
   let displayedQ = "";
-  displayedQ += '<p class="quote">' + randomQ.quote + "</p>";
+  displayedQ += '<p class="quote">' + randomQ.quote + "</p> ";
   displayedQ += '<p class="source">' + randomQ.source;
-  if (displayedQ.citation !== "") {
+  if (randomQ.citation !== quotes.citation) {
     displayedQ += '<span class="citation">' + randomQ.citation + "</span>";
   }
-  if (displayedQ.year !== "") {
-    displayedQ += '<span class="year">' + randomQ.year + "</span>";
+  if (randomQ.year !== quotes.year) {
+    displayedQ += '<span class="year">' + randomQ.year + "</span>, ";
   }
-  if (displayedQ.tags !== "") {
+  if (randomQ.tags !== quotes.tags) {
     displayedQ += '</span class="tags">' + randomQ.tags + "</span>";
   }
   displayedQ += "</p>";
